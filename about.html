@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Marc Andrei Marcos Legal Aid Center - Tarlac State University School of Law">
+    <meta name="author" content="Marc Andrei Marcos Legal Aid Center">
+    <title>About Us - Marc Andrei Marcos Legal Aid Center</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=RoxboroughCF:wght@400;700&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #061D37; 
+            --secondary-color: #BD9D61;
+            --highlight-color: #EDE8D7;
+            --text-color: #333;
+            --font-header: 'RoxboroughCF', sans-serif;
+            --font-body: 'Work Sans', sans-serif;
+            --max-width: 1200px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--primary-color);
+            font-family: var(--font-body);
+            color: var(--highlight-color); /* White text across the page */
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: var(--highlight-color);
+            padding: 1rem;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-align: center;
+            font-family: var(--font-header);
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: var(--highlight-color); /* White text for headings */
+            text-align: center;
+            font-family: var(--font-header);
+        }
+
+        .nav {
+            background-color: var(--secondary-color);
+            padding: 0.3rem 0;
+        }
+
+        .nav-list {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 2rem;
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        .nav-link {
+            color: var(--highlight-color);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 1px;
+        }
+
+        .content {
+            max-width: var(--max-width);
+            margin: 2rem auto;
+            background-color: transparent; /* Transparent background */
+            padding: 2rem;
+            border-radius: 2px;
+            text-align: center;
+            color: var(--highlight-color); /* White text for content */
+        }
+
+        .content h2 {
+            font-family: var(--font-header);
+            color: var(--highlight-color); /* White text for headings */
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        .content p {
+            text-align: center;
+            font-size: 1.5rem;
+            line-height: 2;
+            color: var(--highlight-color); /* White text for paragraphs */
+            margin-bottom: 1rem; /* Add space below paragraphs */
+        }
+
+        .content ul {
+            list-style-type: disc;
+            text-align: left;
+            padding: 0 4rem;
+            margin-top: 1rem; /* Add space above Core Values */
+        }
+
+        .content li {
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            padding-left: 1rem;
+        }
+
+        .content li::marker {
+            color: var(--highlight-color);
+            font-size: 1.4rem;
+        }
+
+        .content li b {
+            color: var(--highlight-color);
+            font-size: 1.3rem;
+            display: inline-block;
+            margin-right: 0.5rem;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--highlight-color);
+            text-align: center;
+            padding: 0.5rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .content ol {
+        counter-reset: item;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+    }
+
+    .content ol li {
+        display: flex;
+        align-items: flex-start;
+        margin: 10px 0;
+        padding-left: 0;
+        text-align: left;
+    }
+
+    .content ol li:before {
+        content: counter(item) ".";
+        counter-increment: item;
+        margin-right: 10px;
+        min-width: 25px;
+        text-align: right;
+    }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="https://th.bing.com/th/id/OIP.1KXbHVlpPl6tOwf5E8f6xQHaHa?rs=1&pid=ImgDetMain" alt="Image" class="logo">
+            <div>
+                <h1>Marc Andrei Marcos Legal Aid Center</h1>
+                <h2>Tarlac State University - School of Law</h2>
+            </div>
+            <img src="https://th.bing.com/th/id/OIP.a8XWJr4LzdGyf0O6GB4DrwHaHa?rs=1&pid=ImgDetMain" alt="Image" class="logo">
+        </div>
+    </header>
+
+    <nav class="nav">
+        <ul class="nav-list"> 
+            <li><a href="main.html" class="nav-link">Home</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#legal-help" class="nav-link">Legal Help Guides</a></li>
+            <li><a href="#partners" class="nav-link">Our Partners</a></li>
+            <li><a href="#clep" class="nav-link">CLEP</a></li>
+            <li><a href="#privacy" class="nav-link">Data Privacy</a></li>
+            <li><a href="#contact" class="nav-link">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h2>VISION</h2>
+        <p>
+            Building the foundation for global recognition as among the best organizations in promoting justice to indigents through free legal service.
+        </p>
+
+        <h2>MISSION</h2>
+        <p>
+            To promote opportunities to all indigents for the preservation of their rights, freedoms, and cultures through support, advocacy, and by providing pro bono legal services.
+        </p>
+
+        <h2>CORE VALUES</h2>
+        <ul>
+            <li><b>Integrity:</b> We pledge to conduct ourselves honorably in all facets of our existence.</li>
+            <li><b>Community Commitment:</b> Our communities are very important to us.</li>
+            <li><b>Justice and Equity:</b> Every person has worth, dignity, and rights.</li>
+            <li><b>Independence:</b> We don't take donations from political parties or businesses.</li>
+            <li><b>Responsibility:</b> We respond accordingly to people's lives.</li>
+            <li><b>Professionalism:</b> We meet the highest professional and ethical standards.</li>
+
+        <h2>WHO IS MARC ANDREI MARCOS?</h2>
+        <p>The Marc Andrei Marcos Legal Aid Center bears the name of the late Marc Andrei Marcos. He was a freshman law student at San Beda College of Law who died during the initiation rites of Lex Leonum Fratemitas on July 30, 2012. He is laid to rest in Tarlac City, his provincial hometown.</p>
+
+        <p>Andrei, whose mother died when he was just four years old, is the son of a civil engineer, a grandson of a retired judge, a brother of a lawyer, and a nephew to a lawyer and an accountant. He was raised with the help of his grandparents and aunts while his father worked overseas.</p>
+            
+        <p>He finished his undergraduate studies in Legal Management at the University of Santo Tomas. He then pursued his law degree at San Beda College of Law. After his death, his family, friends, and the lives he had touched, fought hard to give him the justice he deserved.</p>
+            
+        <p>In Judge Martonino Marcos vs. Hon. Perla Cabrera-Faller, A.M. No. RTJ-16-2472, January 24, 2017, retired Judge Marcos filed an administrative complaint against Hon. Cabrera-Faller for ignorance of the law, misconduct, violation of the anti-graft and corrupt practices act, and for knowingly rendering an unjust judgment/order when she dismissed the criminal case filed against the fraternity members for the murder of Andrei and the violation of the Anti-Hazing Law.</p>
+            
+        <p>The Supreme Court En Banc, found Cabrera-Faller guilty of gross ignorance of the law and for violating the rules of the Code of Conduct when she ordered the immediate archiving of Criminal Case No. 11862-13, the recall of the warrant of arrest which she claimed were issued inadvertently and the hasty dismissal of the case displayed her lack of competence and probity, and can only be considered as grave abuse of authority.Marc Andrei Marcos Legal Aid Center was established and named after Andrei for the continued pursuance of justice for the people of Tarlac. That the rightful justice he never received, may be given to those less fortunate.That, those who have less in life, should have more in law.</p>
+            
+        </ul>
+        <h2>PRIVACY POLICY</h2>
+            <p><b>Data Privacy Statement</b></p>
+            <p>Maintaining your privacy is an important part of the services that we provide. This Privacy Statement describes the information we gather, handle, share, and safeguard when you use our official website, social media accounts, or to apply for and receive our pro bono (free) legal services.</p>
+            <p><b>Our Privacy Practices</b></p>
+            <p>The Data Privacy Act of 2012 (R.A. 10173) and its implementing rules and regulations are intended to be complied with by the privacy practices outlined in this Statement, which are primarily intended for individuals in the Philippines. When using our services, visiting our official website, or using our social media platforms from outside the Philippines, you understand and consent to the possibility that your information will be processed and transferred to the Philippines in accordance with data protection laws and regulations that may be different from those in your home or current jurisdiction.</p>
+
+        <p><b>What Data We May Collect from You</b></p>
+        <p>When you avail of our free legal services and interact with our staff, employees, authorized representatives, law student practitioners, and supervising lawyers, we collect your personal information which may include, among others;</p>
+        <ul>
+            <li>your name, contact details, address, age, birthdate, email address</li>
+            <li>specimen signatures </li>
+            <li>government ID details </li>
+            <li>employment details </li>
+            <li>business details </li>
+            <li>images via CCTV and other similar recording devices which may be observed when visiting our office </li>
+            <li>audio or video recordings of our conversations with you </li>
+        </ul>
+        <p>In the course of rendering our legal services to you, we may collect privilege information and other information incidental to your legal case or circumstances.</p>
+        
+        <p><b>How Does MAMLAC Use Your Personal Information</b></p>
+        <p>As required by law and with the consent of the owner of the personal information, MAMLAC may use personal information to pursue our legitimate objectives for the following purposes;</p>
+        <ul>
+            <li>To offer free legal advice</li>
+            <li>To represent a case during court proceedings</li>
+            <li>To gather and maintain records of our clients</li>
+            <li>To generate data for statistical and research purposes</li>
+            <li>To publish on our official social media accounts highlights and positive outcomes of court proceedings</li>
+            <li>To provide assistance in relation to legal matters, procedures or processes required in each of a case</li>
+            <li>To announce official MAMLAC communications </li>
+        </ul>
+
+    <p>As required by law and with the consent of the owner of the personal information, MAMLAC may share your personal information under an <b>obligation of confidentiality. </b></p>
+        <ul>
+            <li>To share with our student(s) certified to handle legal cases according to Rule 138-A (Law Student Practice) of Rules of Court pursuant to the provisions of Section 5(5), Article VIII of the 1987 Constitution. </li>
+            <li>To share to a court that has or may have jurisdiction over your legal case. </li>
+            <li>To comply with court orders, subpoenas, and/or other legal obligations. </li>
+            <li>To feature photos, videos, and other information in order to advertise the MAMLAC, its activities and events, brochures, website posts, physical and electronic bulletin boards, and other media. </li>
+            <li>To share information to donors, funders, or benefactors to encourage contributions for scholarships, grants, and other forms of assistance. </li>
+            <li>To carry out all other purposes set out above. </li>
+            
+        <p>If any information we collect that is considered personal data is needed for purposes other than those stated here, we will notify you in advance and, if required by law, get your consent before using it. </p>
+        </ul>
+    
+    <p><b>How Does MAMLAC Protect Your Information</b></p>
+        <p>We acknowledge the importance of protecting your sensitive personal data, which may include information about your gender, government-issued identification, and other details. By utilizing appropriate technical, procedural, and physical measures, we aim to preserve the availability, confidentiality, and integrity of your personal information. We provide our staff with training on how to handle your information securely.</p>
+    <p><b>How Long Does MAMLAC Keep Your Information </b></p>
+        <p>The information is retained for as long as is required to fulfill the stated purposes for which it was gathered. Unless mandated or authorized by law, it is never shared with or transmitted to other people or organizations. Every piece of information and data, including databases shared by Tarlac State University School of Law (TSU-SOL) and MAMLAC, is securely saved and communicated in a variety of paper and electronic formats. </p>
+    
+    <p><b>Under Data Privacy Law of 2012, What Are Your Rights as Data Subject</b></p>
+
+    <p>As the Data Subject, you are afforded the following rights as under the Data Privacy Act;</p>
+    <ol>
+        <li>The right to be informed whether your personal information shall be, are being or have been processed.</li>
+        <li>The right to get information prior to your personal data being entered into the personal data's processing system.</li>
+        <li>The right to reasonable access to the data subjects information upon demand.</li>
+        <li>The right, unless the request is vexatious or otherwise unjustified, to contest an inaccuracy or error in personal information and have the controller of that information promptly and appropriately correct it.</li>
+        <li>The right, upon discovery and substantial proof that the personal data are incomplete, outdated, false, unlawfully obtained, used for unauthorized purposes, or are no longer necessary for the purposes for which they were collected, to suspend, withdraw, or order the blocking, removal, or destruction of the personal information from the personal information controller's filing system.</li>
+        <li>The right to be indemnified for any damages sustained due to such inaccurate, incomplete, outdated, false, unlawfully obtained or unauthorized use of personal information.</li>
+        <li>The right to file a complaint before the National Privacy Commission.</li>
+    </ol>
+    <p><b>Personal Information of Minors </b></p>
+
+    <p>According to RA10173, parental or guardian approval must be requested in advance if the information being collected by MAMLAC or given by the minor belongs to them. </p>
+        
+    <p><b>Complaints, Concerns, or Questions </b></p>
+        
+    <p>For any complaints, concerns, or questions regarding the collection and use of your personal information, you can contact our Compliance Officer for Privacy at mamlac@tsu.edu.ph or call us at 096-3311-5757. </p>
+        
+    <p><b>Changes to This Privacy Statement </b></p>
+        
+    <p>We might update this Privacy Statement from time to time. When it's permissible, we'll notify you by various channels of communication. Any change, nevertheless, takes effect right away after it is posted on our web page and social media platforms.</p>
+        
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Marc Andrei Marcos Legal Aid Center. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Marc Andrei Marcos Legal Aid Center - Tarlac State University School of Law">
+    <meta name="author" content="Marc Andrei Marcos Legal Aid Center">
+    <title>Marc Andrei Marcos Legal Aid Center</title>
+    <!-- Importing fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=RoxboroughCF:wght@400;700&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #061D37; 
+            --secondary-color: #BD9D61;
+            --highlight-color: #EDE8D7;
+            --text-color: #333;
+            --font-header: 'RoxboroughCF', sans-serif;
+            --font-body: 'Work Sans', sans-serif;
+            --max-width: 1200px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--primary-color);
+            font-family: var(--font-body);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        .header {
+            background-color: var(--highlight-color);
+            padding: 1rem;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-align: center;
+            font-family: var(--font-header);
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            text-align: center;
+            font-family: var(--font-header);
+        }
+
+        /* Navigation */
+        .nav {
+            background-color: var(--secondary-color);
+            padding: 0.3rem 0;
+        }
+
+        .nav-list {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 2rem;
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        .nav-link {
+            color: var(--highlight-color);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 1px;
+        }
+
+        /* Slider */
+        .slider {
+            position: relative;
+            overflow: hidden;
+            height: 500px;
+            max-width: var(--max-width);
+            margin: 2rem auto;
+        }
+
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .slide.active {
+            opacity: 1;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .slider-nav {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+
+        .slider-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .slider-dot.active {
+            background-color: var(--highlight-color);
+        }
+
+        /* Arrows */
+        .slider-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: var(--highlight-color);
+            padding: 1rem;
+            cursor: pointer;
+            z-index: 2;
+            border: none;
+            border-radius: 50%;
+            font-size: 2rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .slider-arrow:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .slider-prev {
+            left: 1px;
+        }
+
+        .slider-next {
+            right: 1px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .nav-list {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .logo-container {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .slider {
+                height: 300px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="https://th.bing.com/th/id/OIP.1KXbHVlpPl6tOwf5E8f6xQHaHa?rs=1&pid=ImgDetMain" alt="Image" class="logo">
+            <div>
+                <h1>Marc Andrei Marcos Legal Aid Center</h1>
+                <h2>Tarlac State University - School of Law</h2>
+            </div>
+            <img src="https://th.bing.com/th/id/OIP.a8XWJr4LzdGyf0O6GB4DrwHaHa?rs=1&pid=ImgDetMain" alt="Image" class="logo">
+        </div>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="about.html" class="nav-link">About Us</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#legal-help" class="nav-link">Legal Help Guides</a></li>
+            <li><a href="#partners" class="nav-link">Our Partners</a></li>
+            <li><a href="#clep" class="nav-link">CLEP</a></li>
+            <li><a href="#privacy" class="nav-link">Data Privacy</a></li>
+            <li><a href="#contact" class="nav-link">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Slider Section -->
+    <div class="slider">
+        <div class="slide active">
+            <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/470204871_122183678762083924_4885402409801891945_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFVP_NWhxPGHkTIgC_BX84SW3sxJnztz91bezEmfO3P3ex9Mhgf0baArJxEycXZ1iYDv_ZalbZUeB2h2o1jZQWE&_nc_ohc=nM9AALSxEdoQ7kNvgGvaPBf&_nc_oc=AdhvWB2adVxN-cmQ6xsb9rSFDkMe2ZB_xW4yvvFrcUU21omw98HHBRxZ3-dnpkDqPQk&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&_nc_gid=AUjvYABxM0BG8oD6AsNzMbl&oh=00_AYBa0TLcYGW2CmMTcqancZR88WGrFvOHu6gdMDkk9E5MWw&oe=6781C3B3" alt="Image 1">
+        </div>
+        <div class="slide">
+            <img src="https://scontent.fcrk1-5.fna.fbcdn.net/v/t39.30808-6/468958106_122181532316083924_6623529779347512926_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHsG9Wwd1lKkizeKw68sQMa8rQ4xUYXidnytDjFRheJ2W95HWvbv4ImxEWp2T1DmbvAjET3QYPFusJmtMFSRJ8A&_nc_ohc=hcuVjZeAH7IQ7kNvgF5Okil&_nc_oc=AdgjD0fcgvIqGIgVSRhklvFyBDIiLikRb7hnLop0p9PXYEiaLLBSaFHQ_JBdw72ewnw&_nc_zt=23&_nc_ht=scontent.fcrk1-5.fna&_nc_gid=AEREyhJUIPbNwkCQP4Iu4QI&oh=00_AYCrC-Vidz7zZMfEw5nd1ejVQWrysb0hP4xp1gHcjTqxrg&oe=6781D36B" alt="Image 2">
+        </div>
+        <div class="slide">
+            <img src="https://scontent.fcrk1-3.fna.fbcdn.net/v/t39.30808-6/467776613_122179955642083924_5554084953700690490_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHEoApiYoxv_fKuCsC0sUCuTkKoNV73DuxOQqg1XvcO7J_IX6pNtMQ2IFzY1qevah3or-XR1YJS6CKpxGDfFe0N&_nc_ohc=otwnQpLJwFsQ7kNvgFN1QLE&_nc_oc=AdjfXESTfsv5Yvc942gPju2M-HzKF5kMTRzpKxejqQ5rYl-WS08GU4BbPix1SculIZo&_nc_zt=23&_nc_ht=scontent.fcrk1-3.fna&_nc_gid=AUiQUhQHxncmUfpZaKdecFB&oh=00_AYCQIOhEmEcCHHjjeZ8Ldjw-3oclROTanifT5b1LrGOJaw&oe=6781D674" alt="Image 3">
+        </div>
+        <button class="slider-arrow slider-prev" aria-label="Previous Slide">&lt;</button>
+        <button class="slider-arrow slider-next" aria-label="Next Slide">&gt;</button>
+        <div class="slider-nav"></div>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const prevButton = document.querySelector('.slider-prev');
+        const nextButton = document.querySelector('.slider-next');
+        const nav = document.querySelector('.slider-nav');
+        let currentSlide = 0;
+
+        // Create dots for navigation
+        slides.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.classList.add('slider-dot');
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToSlide(index));
+            nav.appendChild(dot);
+        });
+
+        // Update slides
+        function updateSlides() {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[currentSlide].classList.add('active');
+            const dots = nav.querySelectorAll('.slider-dot');
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[currentSlide].classList.add('active');
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlides();
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateSlides();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            updateSlides();
+        }
+
+        prevButton.addEventListener('click', prevSlide);
+        nextButton.addEventListener('click', nextSlide);
+
+        setInterval(nextSlide, 5000);
+    </script>
+</body>
+</html>
